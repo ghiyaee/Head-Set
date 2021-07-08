@@ -1,9 +1,8 @@
+/* header */
 header{
 font-size: 1em;
 }
-
 header nav{
-
     display: flex;
     justify-content: space-between;
     padding: 10px 15px;
@@ -13,7 +12,6 @@ header nav{
 header nav .nav-right{
     display: flex;
     align-items: center;
-
 }
 
 header nav .nav-right a{
@@ -21,8 +19,6 @@ header nav .nav-right a{
     padding: 5px 10px;
     margin: 0px 5px;
     font-size: 1.1em;
-   
-
 }
 
 header nav .nav-left .register{
@@ -44,5 +40,53 @@ header nav .nav-left .register a{
 color:#444;
 margin: 0px 10px;
 font-size: .9em;
+}
 
+/* sliders */
+
+.slider{
+
+    position: relative;
+    font-size: 1em;
+}
+.slider .sliders{
+
+}
+
+.slider .sliders .item{
+
+    position: relative;
+    display: none;
+}
+
+.slider .sliders .item img{
+  width: 100%;
+}
+.slider .sliders .item span{
+    position: absolute;
+    right: 30px;
+    top:42%;
+} 
+
+.slider .sliders .active{
+display: block;
+}
+
+.slider .btns-slider{
+    position: absolute;
+    left: 30px;
+    top:82%;
+    z-index: 1;
+
+}
+
+.slider .btns-slider i{
+    color:white;
+    margin: 3px;
+    cursor: pointer;
+
+}
+
+.slider .btns-slider i:hover{
+    color: rgba(14, 236, 32, 0.5);
 }
