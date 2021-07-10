@@ -1,7 +1,8 @@
 let btn=document.querySelector('#btn');
 let slides=[...document.querySelector('.sliders').children];
-btn=document.addEventListener("click",one);
-function one(index){
+
+btn=document.addEventListener("click",slider_manual);
+function slider_manual(index){
     slides.forEach((list) =>{
         if(index.target.id == 'one'){
               list.classList.remove('active')
@@ -18,26 +19,25 @@ function one(index){
 })
 };
 
-let counter=1;
-setInterval(() =>{
-    counter += 1;
-    if(counter == 4){
-        counter=1
-    }
-    sliderA(counter),2000
-})
-
-function sliderA(index){
-    for(let i=0; i <slides.length; i++){
-       slides[i]
-    }
-    // console.log(slides[i])
-//    slides.forEach((list) =>{
-  
-//    }) 
+let counter=0
+function slider_auto(){
+    if(counter < slides.length){
+         slides.forEach((list) =>{
+              list.classList.remove('active')
+              slides[counter].classList.add("active")
+            
+    })
+    counter++ 
+} else{
+    counter=0
 }
 
-// sliderA(index);
+}
+setInterval('slider_auto()',3000)
+
+
+
+
 
 
 
