@@ -22,11 +22,12 @@ header nav .nav-right a{
 }
 
 header nav .nav-left .register{
- border: 1px solid #666;
+ /* border: 1px solid #666; */
  padding: 5px 8px;
  border-radius: 5px;
  display: flex;
  align-items: center;
+ box-shadow: 1px 1px 1px 2px #e6e4e4;
 }
 
 header nav .nav-left .register i{
