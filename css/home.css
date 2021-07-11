@@ -62,6 +62,7 @@ font-size: .9em;
 
 .slider .sliders .item img{
   width: 100%;
+  transition: all 5s;
 }
 .slider .sliders .item span{
     position: absolute;
@@ -72,6 +73,9 @@ font-size: .9em;
 
 .slider .sliders .active{
 display: block;
+animation-name:fadein ;
+animation-duration: 2.5s;
+
 }
 
 .slider .btns-slider{
