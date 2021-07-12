@@ -96,3 +96,92 @@ animation-duration: 2.5s;
 .slider .btns-slider i:hover{
     color: rgba(53, 190, 245, 0.7);
 }
+
+/* main */
+main{
+  
+}
+main section{
+
+}
+main section .row{
+display: flex;
+padding: 20px 10px;
+}
+main section .row .shop-card{
+    text-align: center;
+    box-shadow:0px 8px 8px 1px rgba(49, 48, 48, 0.2) ;
+    margin: 10px 5px;
+    padding: 10px;
+   
+}
+.shop-card .img{
+    position: relative;
+}
+.shop-card .img .offer{
+    background-color: lightcoral;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    right: 2px;
+    top: 10px;
+}
+.shop-card .img .stars{
+    position: absolute;
+    color: #f1c40f;
+    top:10px;
+    left: 0px;
+    
+}
+.shop-card .img img{
+    width: 60%;
+}
+
+.shop-card .title{
+    color: #333;
+    margin: 15px;
+
+}
+.shop-card .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.shop-card .buttons .left{
+    display: flex;
+}
+.shop-card .buttons .left .extend-btn{
+    display: flex;
+    margin-left: 5px;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color:#333; */
+    color: white;
+    width: 40px;
+    height: 40px;
+    padding: 8px 6px;
+    border-radius:50px;
+    cursor: pointer;
+    transition: 1.5s;
+    box-shadow: 0 1px 5px 1px #333;
+    /* border: 1px solid #333; */
+
+} 
+
+.shop-card .buttons .left .extend-btn .hidden-icon{
+    color: tomato;
+    padding: 5px;
+}
+.shop-card .buttons .left .extend-btn:hover{
+    width: 100px;
+}
+.shop-card .buttons .left .extend-btn:hover .hidden-text{
+    display: block;
+    color: rgb(46, 32, 32);
+}
+
+.shop-card .buttons .left .extend-btn .hidden-text{
+    display: none;
+}
