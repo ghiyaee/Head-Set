@@ -1,8 +1,14 @@
 let btn=document.querySelector('#btn');
 let slides=[...document.querySelector('.sliders').children];
+let span_r=document.querySelector('#span-right');
+let span_l=document.querySelector('#span-left');
+let scorll=[...document.querySelector('.scrollbar').children];
 let timer=180000;
-
+let position=0;
+console.log(scorll)
 btn=document.addEventListener("click",slider_manual);
+span_r.addEventListener('click',span_right);
+span_l.addEventListener('click',span_left);
 
 function slider_manual(index){
     slides.forEach((list) =>{
@@ -49,10 +55,32 @@ setInterval(()=>{
    settimer()
 },1000)
 
+function span_right(){
+    position++;
+    for(let i of scorll) {
+        if(position==0){i.style.left="0px"};
+        if(position==1){i.style.left="740px"};
+        if(position==2){i.style.left="1480px"};
+        if(position==3){i.style.left="2220px"};
+        if(position==4){i.style.left="2960px"};
+        if(position==5){i.style.left="3700px"};
+        if(position > 5){position=5}
+    }
+  console.log('slam')
+}
 
 
+function span_left(){
+    position--;
+    for(let i of scorll){
+        if(position==0){i.style.left="0px"};
+        if(position==1){i.style.left="740px"};
+        if(position==2){i.style.left="1480px"};
+        if(position==3){i.style.left="2220px"};
+        if(position<0){position=0}
+    }
 
-
+}
 
 
   
