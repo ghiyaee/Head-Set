@@ -279,12 +279,14 @@ main section .row .shop-card{
 
 .span-scroll{
    position: absolute;
-   bottom:-1075px;
+   /* top:1075px; */
+   bottom:-176%;
    left:50%;
   font-size: 45px;
   font-weight: bold;
   color:#333;
   cursor: pointer;
+  /* padding-bottom: 10px 0px; */
 }
 #btn-rlt:active{
     color: tomato;
@@ -292,14 +294,68 @@ main section .row .shop-card{
 #btn-lft:active{
     color: tomato;
 }
-.scroll-bar.active{
+ .scroll-bar.active{
     display:block;
+
 }
 
 .scroll-bar.hidden{
     display:none;
 }
+ 
+.row{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    margin-top: 30px;
+}
+.row-right{
+    grid-column: 1/8;
+}
+.row-left{
+    grid-column: 9/13;
+}
 
+/*footer */
+footer{
+    background-image:linear-gradient(to left, rgb(182, 182, 37) , rgb(41, 163, 41));
+    font-size: 1em;
+}
+footer .bottom{
+    background-image:linear-gradient(to right ,rgb(182, 182, 37) , rgb(41, 163, 41));
+    text-align: center;
+    color: white;
+}
+.row-right{
+    padding: 30px;
+}
+ 
+.row-right .title{
+    padding: 10px 0px;
+    color: white;
+    font-size: 1.1em;
+}
+.row-right .desc{
+    color: white;
+    line-height: 2em;
+}
+.row-left{
+padding: 30px;
+text-align: center;
+}
+.row-left .title{
+    padding: 10px 0px;
+    font-size: 1.1em;
+    color: white;
+}
+
+.row-left .social{
+    display: flex;
+    justify-content: space-around;
+}
+
+.row-left .social a{
+    font-size: 1.4em;
+}
 
 @media (max-width:768px) {
     main section .row{
@@ -341,6 +397,10 @@ main section .row .shop-card{
         padding:10px;
     }
     .span-scroll{
-        bottom: -1870px;
+        bottom: -339%;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
     }
 }
