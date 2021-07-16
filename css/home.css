@@ -75,7 +75,7 @@ font-size: .9em;
 .slider .sliders .active{
 display: block;
 animation-name:fadein ;
-animation-duration: 1.5s;
+animation-duration: 1s;
 
 }
 
@@ -136,7 +136,7 @@ main section .row .shop-card{
     
 }
 .shop-card .img img{
-    width: 40%;
+    width:45%;
 }
 
 .shop-card .title{
@@ -195,13 +195,13 @@ main section .row .shop-card{
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(12,1fr);
-    padding:20px
+    padding:10px
 }
 .offer-box{
     grid-column: 1/9;
     box-shadow: 0 1px 5px 1px #333;
     text-align: center;
-    margin: 0px 10px;
+    margin:0px 0px;
     border-radius: 5px;
 }
 .offer-box .title{
@@ -224,15 +224,15 @@ main section .row .shop-card{
 .offer-img-chid{
     grid-column: 1/4;
 }
-{
 
-}
+
+
 .offer-container{
     grid-column: 5/12;
 }
 .offer-container{
     text-align: center;
-    padding: 30px;
+    padding:50px;
 }
 .price-row{
     display: flex;
@@ -269,12 +269,33 @@ main section .row .shop-card{
 }
 
 
+.scroll-bar{
+    text-align: center;
+    box-shadow:0px 5px 5px 1px rgba(197, 196, 196, 0.5) ;
+    margin: 10px 5px;
+    padding: 10px;
+    /* transform: translatey(.75rem) rotatey(-45deg); */
+     /* opacity: 1; */
+    position: relative;
+}
 
+.span-scroll{
+   position: absolute;
+   bottom:-1075px;
+  left:50%;
+  font-size: 45px;
+  font-weight: bold;
+  color:#333;
+  cursor: pointer;
+}
 
+.scroll-bar.active{
+    display:block;
+}
 
-
-
-
+.scroll-bar.hidden{
+    display:none;
+}
 
 
 @media (max-width:768px) {
@@ -301,5 +322,22 @@ main section .row .shop-card{
 
     .shop-card .img img{
         width:20%;
+    }
+    .row-end{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner img{
+        width:50%;
+    }
+    .offer-img-chid img{
+        width:50%;
+    }
+    .offer-container{
+        text-align: center;
+        padding:10px;
+    }
+    .span-scroll{
+        bottom: -1870px;
     }
 }
