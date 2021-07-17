@@ -1,0 +1,76 @@
+.container{
+    height: 100vh;
+    padding: 30px;
+    background-image:linear-gradient(to bottom, rgb(153, 153, 39) , rgb(17, 80, 17));
+    /* opacity: .9; */
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    /* gap: 10px; */
+}
+.login-box{
+    grid-column:5/9;
+}
+
+
+.login-imag img{
+    width: 100%;
+}
+.login-box{
+    box-shadow: 0px 0px 10px 5px rgb(195, 197, 189);
+    font-size: .8em;
+    background-image:linear-gradient(to bottom, rgb(153, 153, 39) , rgb(17, 80, 17));
+    padding: 50px 35px;
+    margin: 25px;
+    border-radius: 7px;
+}
+.input-user{
+    margin: 50px 0px;
+}
+.input-user input{
+    border: 0;
+    background: transparent;
+    font-size: 20px;
+    border-bottom: 1px solid tomato;
+    outline: none;
+}
+.input-user input::placeholder{
+    color:white
+}
+.input-pass input{
+    border: 0;
+    background: transparent;
+    font-size: 20px;
+    border-bottom: 1px solid tomato;
+    outline: none;
+}
+.qustion a{
+    color:rgb(230, 234, 236);
+    font-size:1.5empx;
+}
+.btn-enter{
+    text-align: center;
+}
+.btn-enter input{
+   text-align: center;
+   border:0;
+   padding: 7px 40px;
+   border-radius:35px;
+   background: tomato;
+   color: white;
+   font-size: 1.5em;
+}
+.input-pass input::placeholder{
+color: white;
+}
+.social{
+    display: flex;
+    justify-content: center;
+
+}
+.social i{
+    margin-top: 20px;
+    padding:5px 10px;
+    font-size: 2em;
+}

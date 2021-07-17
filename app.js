@@ -15,6 +15,7 @@ click_lft.addEventListener("click",priv)
 
 function next(){
      const scroll=[...document.querySelector('.test').children];
+     console.log(scroll)
      scroll.forEach((list)=>{
         list.classList.remove('active')
         list.classList.add('hidden')

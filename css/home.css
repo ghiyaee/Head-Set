@@ -24,10 +24,11 @@ header nav .nav-right a{
 header nav .nav-left .register{
  /* border: 1px solid #666; */
  padding: 5px 8px;
- border-radius: 5px;
+ border-radius: 8px;
  display: flex;
  align-items: center;
  box-shadow: 1px 1px 1px 2px #e6e4e4;
+ border-right: 6px solid tomato;
 }
 
 header nav .nav-left .register i{
@@ -116,6 +117,8 @@ main section .row .shop-card{
     margin: 10px 5px;
     padding: 10px;
     transition: 1s;
+    border-top: 6px solid tomato;
+    border-radius: 8px;
 }
 .shop-card .img{
     position: relative;
@@ -279,15 +282,14 @@ main section .row .shop-card{
 
 .span-scroll{
    position: absolute;
-   /* top:1075px; */
-   bottom:-176%;
+   bottom:-178%;
    left:50%;
   font-size: 45px;
   font-weight: bold;
   color:#333;
   cursor: pointer;
-  /* padding-bottom: 10px 0px; */
 }
+
 #btn-rlt:active{
     color: tomato;
 }
@@ -319,14 +321,17 @@ main section .row .shop-card{
 footer{
     background-image:linear-gradient(to left, rgb(182, 182, 37) , rgb(41, 163, 41));
     font-size: 1em;
+    border-top-left-radius:200px;
+    border-bottom-right-radius: 200px;
+    margin-bottom: 30px;
 }
 footer .bottom{
-    background-image:linear-gradient(to right ,rgb(182, 182, 37) , rgb(41, 163, 41));
     text-align: center;
     color: white;
+  
 }
 .row-right{
-    padding: 30px;
+ padding: 40px;
 }
  
 .row-right .title{
@@ -337,26 +342,28 @@ footer .bottom{
 .row-right .desc{
     color: white;
     line-height: 2em;
+    margin-right: 35px;
 }
 .row-left{
-padding: 30px;
+padding:  30px;
 text-align: center;
 }
 .row-left .title{
     padding: 10px 0px;
     font-size: 1.1em;
     color: white;
+    margin-top:35px;
 }
 
 .row-left .social{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 .row-left .social a{
     font-size: 1.4em;
 }
-
+/* 
 @media (max-width:768px) {
     main section .row{
         flex-direction: column;
@@ -403,4 +410,4 @@ text-align: center;
         display: flex;
         flex-direction: column;
     }
-}
+} */
