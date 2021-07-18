@@ -40,8 +40,6 @@ function priv(){
 }
 
 
-
-
 function slider_manual(index){
       slides.forEach((list) =>{
         // list.classList.remove('active')
