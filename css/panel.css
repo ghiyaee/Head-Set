@@ -22,7 +22,8 @@
     padding: 10px 0px;
 }
 .persons span{
-    color:rgb(245, 126, 105)
+    /* color:rgb(245, 126, 105) */
+    color:white
 }
 .user img{
     width: 48px;
@@ -40,8 +41,9 @@
     box-shadow: 0 1px 2px 2px rgb(221, 220, 220);
 }
 .item span , i{
-    color:rgb(245, 126, 105);
+    /* color:rgb(245, 126, 105); */
     cursor: pointer;
+    color: white;
 }
 .container-left header{
     margin: 7px;
