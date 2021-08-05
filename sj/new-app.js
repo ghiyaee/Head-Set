@@ -12,7 +12,7 @@ function register() {
   frm_regi.style.display = "block";
 }
 function opnpanel() {
-  window.open("panel.html");
+  window.open("../pages/panel.html");
 }
 
 function exit_panel() {
