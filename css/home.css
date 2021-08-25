@@ -1,4 +1,8 @@
 /* header */
+.container {
+  width: 100%;
+  max-width: 1800px;
+}
 header {
   font-size: 1.2em;
 }
@@ -16,7 +20,7 @@ header nav .nav-right {
 
 header nav .nav-right a {
   color: #444;
-  padding: 5px 10px;
+  padding: 5px 2px;
   margin: 0px 5px;
   font-size: 1.1em;
 }
@@ -47,7 +51,7 @@ header nav .nav-left .register a {
 
 .slider {
   position: relative;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 /* .slider .sliders{
 
@@ -64,9 +68,9 @@ header nav .nav-left .register a {
 }
 .slider .sliders .item span {
   position: absolute;
-  right: 30px;
-  top: 42%;
-  color: white;
+  right: 10px;
+  top: 8%;
+  color: rgb(253, 252, 252);
   font-weight: bold;
 }
 
@@ -79,7 +83,7 @@ header nav .nav-left .register a {
 .slider .btns-slider {
   position: absolute;
   left: 30px;
-  top: 90%;
+  top: 75%;
   z-index: 1;
 }
 
@@ -97,10 +101,12 @@ header nav .nav-left .register a {
 main {
 }
 main section {
+  overflow: hidden;
 }
 main section .row {
   display: flex;
-  padding: 20px 10px;
+  /* padding: 0px 10px; */
+  flex-direction: column;
 }
 main section .row .shop-card {
   text-align: center;
@@ -129,7 +135,7 @@ main section .row .shop-card {
   left: 0px;
 }
 .shop-card .img img {
-  width: 45%;
+  width: 35%;
 }
 
 .shop-card .title {
@@ -182,13 +188,9 @@ main section .row .shop-card {
 
 /*secion offer-end */
 .row-end {
-  display: grid;
-  gap: 5px;
-  grid-template-columns: repeat(12, 1fr);
   padding: 10px;
 }
 .offer-box {
-  grid-column: 1/9;
   box-shadow: 0 1px 5px 1px #333;
   text-align: center;
   margin: 0px 0px;
@@ -203,28 +205,19 @@ main section .row .shop-card {
   color: white;
 }
 .banner {
-  grid-column: 9/13;
   box-shadow: 0 1px 5px 1px #333;
 }
 
 .row-end-child {
-  display: grid;
-  grid-template-columns: repeat(12.1fr);
 }
 .offer-img-chid {
-  grid-column: 1/4;
 }
 
 .offer-container {
-  grid-column: 5/12;
-}
-.offer-container {
-  text-align: center;
-  padding: 50px;
 }
 .price-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-size: 1em;
   font-weight: bold;
@@ -250,10 +243,7 @@ main section .row .shop-card {
   font-weight: bold;
 }
 .banner {
-  text-align: center;
-}
-.banner img {
-  width: 100%;
+  display: none;
 }
 
 .scroll-bar {
@@ -261,16 +251,15 @@ main section .row .shop-card {
   box-shadow: 0px 5px 5px 1px rgba(197, 196, 196, 0.5);
   margin: 10px 5px;
   padding: 10px;
-  position: relative;
 }
 
 .span-scroll {
   position: absolute;
-  bottom: -1520px;
+  bottom: -4100px;
   left: 50%;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
-  color: #333;
+  color: rgb(212, 13, 13);
   cursor: pointer;
 }
 
@@ -289,15 +278,15 @@ main section .row .shop-card {
 }
 
 .row {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  margin-top: 30px;
+  display: flex;
+
+  flex-direction: column;
 }
 .row-right {
-  grid-column: 1/8;
 }
 .row-left {
-  grid-column: 9/13;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*footer */
@@ -308,9 +297,9 @@ footer {
     rgb(41, 163, 41)
   );
   font-size: 1em;
-  border-top-left-radius: 200px;
-  border-bottom-right-radius: 200px;
+
   margin-bottom: 30px;
+  border-radius: 7px;
 }
 footer .bottom {
   text-align: center;
@@ -331,69 +320,129 @@ footer .bottom {
   margin-right: 35px;
 }
 .row-left {
-  padding: 30px;
-  text-align: center;
 }
 .row-left .title {
-  padding: 10px 0px;
-  font-size: 1.1em;
+  padding: 1px 0px;
+
   color: white;
-  margin-top: 35px;
 }
 
 .row-left .social {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .row-left .social a {
   font-size: 1.4em;
+  padding: 0 5px;
 }
-/* 
-@media (max-width:768px) {
-    main section .row{
-        flex-direction: column;
-    }
-    .slider .sliders .item span{
-        right: 15px;
-        top:30%;
-        color: rgb(236, 239, 247);
-        font-size: .1em;
-        font-weight: bold;
-    }
-
-    .slider .btns-slider{
-        left: 15px;
-        top:75%;
-        z-index: 1;
-    
-    }
-    .slider .btns-slider i{
-        font-size: .1em;
-    }
-
-    .shop-card .img img{
-        width:20%;
-    }
-    .row-end{
-        display: flex;
-        flex-direction: column;
-    }
-    .banner img{
-        width:50%;
-    }
-    .offer-img-chid img{
-        width:50%;
-    }
-    .offer-container{
-        text-align: center;
-        padding:10px;
-    }
-    .span-scroll{
-        bottom: -339%;
-    }
-    .row{
-        display: flex;
-        flex-direction: column;
-    }
+/* @media (min-widht: 400) {
+  header {
+    font-size: 0.2em;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 0.5em;
+  }
+  .sliders {
+    width: 100vw;
+  }
 } */
+/* @media (min-width: 768px) {
+  header {
+    background-color: aquamarine;
+  }
+
+  .span-scroll {
+    position: absolute;
+    bottom: -1513px;
+    left: 49%;
+    font-size: 45px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  .offer-container {
+    text-align: center;
+    padding: 50px;
+    margin-top: 150px;
+  }
+} */
+
+@media (min-width: 768px) {
+  header {
+    font-size: 1.2em;
+    /* background-color: #f1c40f; */
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    font-size: 0.9em;
+  }
+  header nav .nav-right a {
+    padding: 5px 2px;
+  }
+  header nav .nav-left .register {
+    padding: 0px 0px;
+  }
+  header nav .nav-left .register i {
+    margin: 7px;
+    color: #444;
+    font-size: 1.5em;
+  }
+
+  header nav .nav-left .register a {
+    color: #444;
+    margin: 0px 10px;
+    font-size: 0.9em;
+  }
+  main section .row {
+    flex-direction: row;
+  }
+  .slider .sliders .item span {
+    right: 15px;
+    top: 20%;
+    color: rgb(236, 239, 247);
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  .slider .btns-slider {
+    left: 15px;
+    top: 90%;
+    z-index: 1;
+  }
+  .slider .btns-slider i {
+    font-size: 1.1em;
+  }
+
+  .shop-card .img img {
+    width: 25%;
+  }
+  .row-end {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .offer-box {
+    width: 22%;
+    margin-left: 8px;
+    background: rgb(248, 248, 248);
+  }
+
+  .offer-img-chid img {
+    width: 40%;
+  }
+  .offer-container {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
