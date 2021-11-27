@@ -27,7 +27,7 @@ header nav .nav-right a {
 
 header nav .nav-left .register {
   /* border: 1px solid #666; */
-  padding: 5px 8px;
+  padding: 5px 5px;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -38,13 +38,13 @@ header nav .nav-left .register {
 header nav .nav-left .register i {
   margin: 7px;
   color: #444;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 header nav .nav-left .register a {
   color: #444;
   margin: 0px 10px;
-  font-size: 0.9em;
+  font-size: 0.5em;
 }
 
 /* sliders */
@@ -188,12 +188,12 @@ main section .row .shop-card {
 
 /*secion offer-end */
 .row-end {
-  padding: 10px;
+  padding: 5px;
 }
 .offer-box {
-  box-shadow: 0 1px 5px 1px #333;
+  box-shadow: 0 1px 20px 0px rgb(235, 169, 169);
   text-align: center;
-  margin: 0px 0px;
+  margin-bottom: 10px;
   border-radius: 5px;
 }
 .offer-box .title {
@@ -296,7 +296,7 @@ footer {
     rgb(182, 182, 37),
     rgb(41, 163, 41)
   );
-  font-size: 1em;
+  /* font-size: 0.9em; */
 
   margin-bottom: 30px;
   border-radius: 7px;
@@ -319,11 +319,11 @@ footer .bottom {
   line-height: 2em;
   margin-right: 35px;
 }
-.row-left {
+.row-left titel {
+
 }
 .row-left .title {
-  padding: 1px 0px;
-
+  padding: 0px 0px;
   color: white;
 }
 
@@ -336,40 +336,7 @@ footer .bottom {
   font-size: 1.4em;
   padding: 0 5px;
 }
-/* @media (min-widht: 400) {
-  header {
-    font-size: 0.2em;
-  }
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    font-size: 0.5em;
-  }
-  .sliders {
-    width: 100vw;
-  }
-} */
-/* @media (min-width: 768px) {
-  header {
-    background-color: aquamarine;
-  }
 
-  .span-scroll {
-    position: absolute;
-    bottom: -1513px;
-    left: 49%;
-    font-size: 45px;
-    font-weight: bold;
-    color: #333;
-    cursor: pointer;
-  }
-  .offer-container {
-    text-align: center;
-    padding: 50px;
-    margin-top: 150px;
-  }
-} */
 
 @media (min-width: 768px) {
   header {

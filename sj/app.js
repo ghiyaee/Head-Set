@@ -70,16 +70,4 @@ function slider_auto() {
 }
 setInterval("slider_auto()", 4000);
 
-function settimer() {
-  if (timer == 0) return;
-  let hou = Math.floor(timer / 3600);
-  let min = Math.floor((timer % 3600) / 60);
-  let sec = (timer % 3600) % 60;
-  document.querySelector("#hor").innerHTML = hou;
-  document.querySelector("#min").innerHTML = min;
-  document.querySelector("#sec").innerHTML = sec;
-}
-setInterval(() => {
-  timer -= 1;
-  settimer();
-}, 1000);
+
