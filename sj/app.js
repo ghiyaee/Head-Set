@@ -1,15 +1,20 @@
 let btn = document.querySelector("#btn");
 let slides = [...document.querySelector(".sliders").children];
-
+let menu = document.querySelector(".menu")
 const scroll1 = [...document.querySelector(".test1").children];
 let click_rlt = document.querySelector("#btn-rlt");
 let click_lft = document.querySelector("#btn-lft");
 const row_end = document.querySelector(".row-end");
 const banner = document.querySelectorAll(".banner");
+const home = document.querySelector('.home')
+const user = document.querySelector('.user')
+const buy = document.querySelector('.buy')
+const search = document.querySelector('.search')
 console.log(banner);
 let timer = 180000;
 let position = 0;
 
+menu.addEventListener("click",show)
 btn = document.addEventListener("click", slider_manual);
 // click_rlt.addEventListener("click", next);
 // click_lft.addEventListener("click", priv);
@@ -69,5 +74,20 @@ function slider_auto() {
   }
 }
 setInterval("slider_auto()", 4000);
+  let check = true;
+function show() {
+  if (check) {
+    home.style.right = "50px";
+    user.style.right = "75px";
+    buy.style.right = "97px";
+    search.style.right = "120px";
+    check = false;
+  } else {
+    home.style.right = "15px";
+    user.style.right = "15px";
+    buy.style.right = "15px";
+    search.style.right = "15px";
+    check = true;
+  }
 
-
+}

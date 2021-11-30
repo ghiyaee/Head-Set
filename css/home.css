@@ -17,7 +17,9 @@ header nav .nav-right {
   display: flex;
   align-items: center;
 }
-
+header nav .nav-right .menu{
+ display: none;
+}
 header nav .nav-right a {
   color: #444;
   padding: 5px 2px;
@@ -413,3 +415,61 @@ footer .bottom {
     flex-direction: column;
   }
 }
+@media (max-width:500px) {
+ 
+header nav .nav-right .menu{
+ display: block;
+}
+header nav .nav-right a {
+  padding: 0px 0px;
+  margin: 0px 0px;
+   font-size: 0.8em;
+}
+  .menu{
+    position: absolute;
+    color: rgb(224, 218, 216);
+    background-color:tomato;
+    z-index: 5;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    right: 9px;
+    top:18px;
+   font-weight: 900;
+  }
+  .home{
+    position: absolute;
+    z-index: 4;
+    right:15px;
+    top:25px;
+    transition: 1s;
+  }
+  .user{
+    position: absolute;
+    z-index: 3;
+    color: rgb(12, 22, 21);
+    right: 15px;
+     top:25px;
+     transition:2s;
+  }
+  .buy{
+    position: absolute;
+    z-index: 2;
+    color: rgb(7, 14, 13);
+    right:15px;
+     top:25px;
+     transition: 3s;
+
+  }
+  .search{
+    position: absolute;
+    z-index: 1;
+    color: rgb(8, 15, 15);
+    right: 15px;
+     top:25px;
+     transition: 4s;
+  }
+
+}
+  
