@@ -10,11 +10,13 @@ const home = document.querySelector('.home')
 const user = document.querySelector('.user')
 const buy = document.querySelector('.buy')
 const search = document.querySelector('.search')
+const input = document.querySelector('.input')
 console.log(banner);
 let timer = 180000;
 let position = 0;
 
-menu.addEventListener("click",show)
+search.addEventListener("click",showsearch)
+menu.addEventListener("click", showMenu)
 btn = document.addEventListener("click", slider_manual);
 // click_rlt.addEventListener("click", next);
 // click_lft.addEventListener("click", priv);
@@ -74,8 +76,11 @@ function slider_auto() {
   }
 }
 setInterval("slider_auto()", 4000);
-  let check = true;
-function show() {
+
+
+
+let check = true;
+function showMenu() {
   if (check) {
     home.style.right = "50px";
     user.style.right = "75px";
@@ -88,6 +93,18 @@ function show() {
     buy.style.right = "15px";
     search.style.right = "15px";
     check = true;
+  }
+
+}
+
+let inputshow =true;
+function showsearch() {
+  if (inputshow) {
+    input.style.display = "block"
+    inputshow = false;
+  } else {
+    input.style.display = "none"
+    inputshow = true;
   }
 
 }

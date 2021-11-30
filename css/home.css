@@ -2,10 +2,12 @@
 .container {
   width: 100%;
   max-width: 1800px;
+
 }
 header {
   font-size: 1.2em;
 }
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -35,6 +37,7 @@ header nav .nav-left .register {
   align-items: center;
   box-shadow: 1px 1px 1px 2px #e6e4e4;
   border-right: 6px solid tomato;
+  cursor: pointer;
 }
 
 header nav .nav-left .register i {
@@ -48,12 +51,23 @@ header nav .nav-left .register a {
   margin: 0px 10px;
   font-size: 0.5em;
 }
+/* search */
+.input{
+  width:98%;
+  outline: none;
+  border: none;
+  margin:  0 auto;
+  box-shadow: 0px 0px 12px 0px rgb(243, 143, 125) ;
+  border-radius: 3px;
+  display: none;
 
+}
 /* sliders */
 
 .slider {
   position: relative;
   font-size: 0.8em;
+  margin-top: 8px;
 }
 /* .slider .sliders{
 
@@ -425,6 +439,9 @@ header nav .nav-right a {
   margin: 0px 0px;
    font-size: 0.8em;
 }
+.input{
+  display: none;
+}
   .menu{
     position: absolute;
     color: rgb(224, 218, 216);
@@ -436,7 +453,8 @@ header nav .nav-right a {
     text-align: center;
     right: 9px;
     top:18px;
-   font-weight: 900;
+    font-weight: 900;
+    cursor: pointer;
   }
   .home{
     position: absolute;
