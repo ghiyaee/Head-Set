@@ -81,13 +81,22 @@ setInterval("slider_auto()", 4000);
 
 let check = true;
 function showMenu() {
+  
   if (check) {
-    home.style.right = "50px";
-    user.style.right = "75px";
-    buy.style.right = "97px";
-    search.style.right = "120px";
+    menu.style.transform = "rotateZ(90deg)";
+    menu.style.backgroundColor = " white";
+    menu.style.color = "tomato";
+    menu.style.boxShadow = "0px 0px 15px 0px rgb(236, 64, 48)";
+    home.style.right = "70px";
+    user.style.right = "93px";
+    buy.style.right = "113px";
+    search.style.right = "138px";
     check = false;
   } else {
+    menu.style.transform = "rotateZ(0deg)";
+    menu.style.backgroundColor = " tomato";
+    menu.style.color = "white";
+    menu.style.boxShadow = "0px 0px 0px 0px rgb(250, 250, 250)";
     home.style.right = "15px";
     user.style.right = "15px";
     buy.style.right = "15px";
@@ -99,6 +108,7 @@ function showMenu() {
 
 let inputshow =true;
 function showsearch() {
+  
   if (inputshow) {
     input.style.display = "block"
     inputshow = false;
@@ -106,5 +116,5 @@ function showsearch() {
     input.style.display = "none"
     inputshow = true;
   }
-
+console.log('kkk')
 }

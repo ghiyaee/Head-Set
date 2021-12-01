@@ -12,9 +12,6 @@ function register() {
   frm_regi.style.display = "block";
 }
 function opnpanel() {
-  window.open("../pages/panel.html");
+  window.open("../index.html");
 }
 
-function exit_panel() {
-  window.open("home.html");
-}
