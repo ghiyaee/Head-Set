@@ -18,36 +18,9 @@ let position = 0;
 search.addEventListener("click",showsearch)
 menu.addEventListener("click", showMenu)
 btn = document.addEventListener("click", slider_manual);
-// click_rlt.addEventListener("click", next);
-// click_lft.addEventListener("click", priv);
-
-function next() {
-  const scroll = [...document.querySelector(".test").children];
-  console.log(scroll);
-  scroll.forEach((list) => {
-    list.classList.remove("active");
-    list.classList.add("hidden");
-    scroll1.forEach((list1) => {
-      list1.classList.remove("hidden");
-    });
-  });
-}
-
-function priv() {
-  console.log("left");
-  scroll1.forEach((list1) => {
-    list1.classList.remove("active");
-    list1.classList.add("hidden");
-    const scroll = [...document.querySelector(".test").children];
-    scroll.forEach((list) => {
-      list.classList.remove("hidden");
-    });
-  });
-}
 
 function slider_manual(index) {
   slides.forEach((list) => {
-    // list.classList.remove('active')
     if (index.target.id == "one") {
       list.classList.remove("active");
       slides[0].classList.add("active");
@@ -108,7 +81,6 @@ function showMenu() {
 
 let inputshow =true;
 function showsearch() {
-  
   if (inputshow) {
     input.style.display = "block"
     inputshow = false;
@@ -116,5 +88,4 @@ function showsearch() {
     input.style.display = "none"
     inputshow = true;
   }
-console.log('kkk')
 }
