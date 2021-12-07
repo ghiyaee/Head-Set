@@ -6,8 +6,8 @@
   top:0;
   right: 0;
   z-index: -1;
- filter: blur(50px);
- transition: all 1s ease;
+  filter: blur(50px);
+  transition: all 1.5s ease;
 }
 .loading{
     font-size: 50px;
