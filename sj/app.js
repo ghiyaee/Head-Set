@@ -17,14 +17,15 @@ console.log(banner);
 let timer = 180000;
 let position = 0;
 let conter = 0;
+let vaild=true
 
-
-const stop=setInterval(con,150)
+const stop=setInterval(con,100)
 function con() {
   conter++
-  if (conter > 49) {
+  if (conter > 49 && vaild) {
     clearInterval(stop)
-    conti.style.zIndex="1"
+    conti.style.zIndex = "1"
+    vaild = false;
   }
   cnter.innerHTML = `LOADING ${conter}`
   cnter.style.opacity = 1 - (conter / 50)

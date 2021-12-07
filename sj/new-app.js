@@ -6,7 +6,6 @@ let exit = document.querySelector("#exit");
 let enter = document.querySelector('#cheched');
 let user = document.querySelector('#user');
 let pass = document.querySelector('#pass');
-
 regi.addEventListener("click", register);
 panel.addEventListener("click", opnpanel);
 enter.addEventListener('click',summit)
@@ -15,5 +14,5 @@ function register() {
   frm_regi.style.display = "block";
 }
 function opnpanel() {
-  window.open("../index.html");
+  // window.open("../index.html");
 }
