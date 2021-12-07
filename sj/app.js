@@ -1,3 +1,5 @@
+const conti = document.querySelector('.container')
+const cnter=document.querySelector('.loading')
 let btn = document.querySelector("#btn");
 let slides = [...document.querySelector(".sliders").children];
 let menu = document.querySelector(".menu")
@@ -14,6 +16,20 @@ const input = document.querySelector('.input')
 console.log(banner);
 let timer = 180000;
 let position = 0;
+let conter = 0;
+
+
+const stop=setInterval(con,100)
+function con() {
+  conter++
+  if (conter > 49) {
+    clearInterval(stop)
+    conti.style.zIndex="1"
+  }
+  cnter.innerHTML = `LOADING ${conter}`
+  cnter.style.opacity = 1 - (conter / 50)
+  conti.style.filter=`blur(${50 - conter})`
+}
 
 search.addEventListener("click",showsearch)
 menu.addEventListener("click", showMenu)
