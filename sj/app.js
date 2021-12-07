@@ -22,14 +22,14 @@ let vaild=true
 const stop=setInterval(con,100)
 function con() {
   conter++
-  if (conter > 49 && vaild) {
+  if (conter > 99 && vaild) {
     clearInterval(stop)
     conti.style.zIndex = "1"
     vaild = false;
   }
   cnter.innerHTML = `LOADING ${conter}`
-  cnter.style.opacity = 1 - (conter / 50)
-  conti.style.filter=`blur(${50 - conter})`
+  cnter.style.opacity = 1 - (conter / 100)
+  conti.style.filter=`blur(${100 - conter})`
 }
 
 search.addEventListener("click",showsearch)
