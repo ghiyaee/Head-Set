@@ -19,7 +19,7 @@ let position = 0;
 let conter = 0;
 let vaild=true
 
-const stop=setInterval(con,100)
+const stop=setInterval(con,150)
 function con() {
   conter++
   if (conter > 99 && vaild) {
