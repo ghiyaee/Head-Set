@@ -22,7 +22,7 @@ let vaild=true
 const stop=setInterval(con,150)
 function con() {
   conter++
-  if (conter > 99 && vaild) {
+  if (conter > 50 && vaild) {
     clearInterval(stop)
     conti.style.zIndex = "1"
     vaild = false;
