@@ -22,13 +22,13 @@ let vaild=true
 const stop=setInterval(con,150)
 function con() {
   conter++
-  if (conter > 49 && vaild) {
+  if (conter > 99 && vaild) {
     clearInterval(stop)
     conti.style.zIndex = "1"
     vaild = false;
   }
   cnter.innerHTML = `LOADING ${conter}`
-  cnter.style.opacity = 1 - (conter / 50)
+  cnter.style.opacity = 1 - (conter /100)
   conti.style.filter=`blur(${100 - conter})`
 }
 
