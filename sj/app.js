@@ -17,19 +17,17 @@ console.log(banner);
 let timer = 180000;
 let position = 0;
 let conter = 0;
-let vaild=true
 
 const stop=setInterval(con,150)
 function con() {
   conter++
-  if (conter > 99 && vaild) {
+  if (conter > 30 ) {
     clearInterval(stop)
     conti.style.zIndex = "1"
-    vaild = false;
   }
   cnter.innerHTML = `LOADING ${conter}`
-  cnter.style.opacity = 1 - (conter / 100)
-  conti.style.filter=`blur(${100 - conter})`
+  cnter.style.opacity = 1 - (conter /30)
+  conti.style.filter=`blur(${30- conter})`
 }
 
 search.addEventListener("click",showsearch)
